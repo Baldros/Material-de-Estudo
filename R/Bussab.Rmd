@@ -1,0 +1,39 @@
+Questão 11:
+```{r}
+#Colunas:
+X = c(2.0,2.5,2.9,3.3,4.1,4.3,7.0,13.0)
+Xc = c(2.0,2.5,2.9,3.3,4.1,7.0)
+Y = c(17.5,18.5,19.5,22.2,26.5,16.6,36.6,38.4)
+Yc = c(17.5,18.5,19.5,22.2,26.5,36.6)
+```
+
+```{r}
+c =0
+for(i in range(length(X))){
+  for (j in range(length(Y))){
+    c = c + i*j
+  }
+}
+c
+```
+```{r}
+sX=(sum(X)-length(X)*xb)/dpX
+sY=(sum(Y)-length(Y)*yb)/dpY
+```
+
+(d) Calculo de Correlação:
+```{r}
+#Médias:
+xb = sum(X/length(X))
+yb = sum(Y/length(Y))
+print(xb)
+print(yb)
+
+#Calculo do Desvio Padrão:
+dpX=var(X)**.5
+dpY=var(Y)**.5
+print(dpX)
+print(dpY)
+```
+
+
